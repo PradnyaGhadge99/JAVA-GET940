@@ -13,11 +13,15 @@ public class JavaAssignmentQ2 {
 		int four = 0;
 		int zero = 0;
 		int total_runs=0;
-		
+		int totalBallsPlayed =0;
+		int overNo;
 		System.out.println("-------Java Assignment Question 2---------");
-		for(int i=0;i<6;i++) {
-			System.out.println("Enter the runs scored: ");
-			int run = sc.nextInt();
+		
+		System.out.println("Total Overs played by the Batsman: ");
+		overNo = sc.nextInt();
+		totalBallsPlayed = 6*overNo;
+		for(int i=0;i<totalBallsPlayed;i++) {
+			int run = (int)(Math.random()*7);
 			switch(run) {
 			case 0: 
 				zero++;
