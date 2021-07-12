@@ -90,13 +90,13 @@ class Inning{
 	void caluclate() {
 		
 		Scanner sc = new Scanner(System.in);
+		int overNo;
+		System.out.println("Enter the total number of Over played by the batsman : ");
+		overNo = sc.nextInt();
 		
-		System.out.println("Enter the number of balls played : ");
-		balls_played = sc.nextInt();
-		
+		balls_played= 6*overNo;
 		for(int i=0;i<balls_played;i++) {
-			System.out.println("Enter the runs scored : ");
-			int run = sc.nextInt();
+			int run = (int)(Math.random()*7);
 			switch(run) {
 			case 0: 
 				zero++;
